@@ -84,6 +84,7 @@ namespace GitTfs.Commands
                         v => ForceFetch = v != null },
                     { "x|export", "Export metadata",
                         v => ExportMetadatas = v != null },
+                    { "launchdebugger", "Launch Debugger", v => { } },
                     { "export-work-item-mapping=", "Path to Work-items mapping export file",
                         v => ExportMetadatasFile = v },
                     { "branches=", "Strategy to manage branches:"+

@@ -25,6 +25,11 @@ namespace GitTfs
         {
             try
             {
+                if (args.Contains("--launchdebugger") && !Debugger.IsAttached)
+                {
+                    Debugger.Launch();
+                }
+
                 Environment.ExitCode = MainCore(args);
             }
             catch (Exception e)
